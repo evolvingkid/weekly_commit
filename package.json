@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/evolvingkid/weekly_commit#readme",
   "dependencies": {
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "yargs": "^17.2.1"
+  },
+  "bin": {
+    "commit-weekly": "./cli.js"
   }
 }
