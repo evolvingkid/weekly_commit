@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/evolvingkid/weekly_commit/compare/v1.1.0...v1.2.0) (2021-09-26)
+
+
+### Features
+
+* cli tool done ([42db207](https://github.com/evolvingkid/weekly_commit/commit/42db207a0bc2e6dd16fdd84b37e2abdeb1c7d73f))
+
 ## 1.1.0 (2021-09-26)
 
 
