@@ -1,6 +1,6 @@
 {
   "name": "commitweekly",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "weekly commit messgae reciver",
   "main": "app.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/evolvingkid/weekly_commit#readme",
   "dependencies": {
     "moment": "^2.29.1",
+    "standard-version": "^9.3.1",
     "yargs": "^17.2.1"
   },
   "bin": {
