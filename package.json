@@ -1,0 +1,19 @@
+{
+  "name": "commitweekly",
+  "version": "1.0.0",
+  "description": "weekly commit messgae reciver",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evolvingkid/weekly_commit.git"
+  },
+  "author": "evolvingkid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evolvingkid/weekly_commit/issues"
+  },
+  "homepage": "https://github.com/evolvingkid/weekly_commit#readme"
+}
