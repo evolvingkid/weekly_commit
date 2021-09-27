@@ -16,7 +16,7 @@ To run the package. Run this command in the root folder of your project. Please 
 
 ```bash
 
-commit-weekly --userMail="<commit_user_email_id>"
+npx commit-weekly --userMail="<commit_user_email_id>"
 
 ```
 
@@ -25,7 +25,7 @@ To make the above commd easy to excute add a script to your package.json file.
 ```json
 {
   "scripts" : {
-    "tasklist" : "commit-weekly --userMail="<commit_user_email_id>"
+    "tasklist" : "npx commit-weekly --userMail="<commit_user_email_id>"
   }
 }
 
@@ -46,15 +46,5 @@ Now add the following json to the file.
 
 ```
 
-
-## Run
-
-To run the package use
-
-```bash
-
-commit-weekly --userMail="<commit_user_email_id>"
-
-```
 
 Currently this package is only able to get commit of a single user we will be adding all user, and multiuser with config file in the package soon.
