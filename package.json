@@ -2,7 +2,7 @@
   "name": "commitweekly",
   "version": "1.2.0",
   "description": "weekly commit messgae reciver",
-  "main": "app.js",
+  "main": "cli.js",
   "scripts": {
     "start": "node app.js",
     "release": "standard-version"
