@@ -1,15 +1,35 @@
-#!/usr/bin/env node
+#!/usr/bin/env bash
+":"; //# comment; exec /usr/bin/env node --input-type=module - "$@" < "$0"
 
-const yargs = require("yargs/yargs");
-const { hideBin } = require("yargs/helpers");
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
 
-const singleUser =  require('./cli/singleUser/index')
+import singleUser from "./cli/singleUser/index.js";
+
+import acessConfigFile from "./config/acessConfigFile.js";
+
+import taskListLog from "./services/tasklistLog.js";
 
 const argv = yargs(hideBin(process.argv)).argv;
 
-if (argv.userMail) {
-    singleUser();
-    return;
+try {
+    
+    if (argv.userMail) {
+        singleUser();
+      } else {
+        const configData = await acessConfigFile();
+      
+        if (configData) {
+          if (configData.userEmail) {
+            taskListLog({ userEmail: configData.userEmail });
+          }
+        }
+      }
+
+      
+} catch (error) {
+
+    console.log('error Occured', error);
+    
 }
 
-console.error("--usermail param is required");
