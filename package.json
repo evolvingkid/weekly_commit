@@ -1,8 +1,8 @@
 {
   "name": "commitweekly",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "weekly commit messgae reciver",
-  "main": "app.js",
+  "main": "cli.js",
   "scripts": {
     "start": "node app.js",
     "release": "standard-version"
@@ -18,11 +18,15 @@
   },
   "homepage": "https://github.com/evolvingkid/weekly_commit#readme",
   "dependencies": {
+    "find-up": "^6.1.0",
     "moment": "^2.29.1",
-    "standard-version": "^9.3.1",
     "yargs": "^17.2.1"
   },
   "bin": {
     "commit-weekly": "./cli.js"
-  }
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.1"
+  },
+  "type": "module"
 }
