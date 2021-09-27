@@ -12,23 +12,19 @@ import taskListLog from "./services/tasklistLog.js";
 const argv = yargs(hideBin(process.argv)).argv;
 
 try {
-    
-    if (argv.userMail) {
-        singleUser();
-      } else {
-        const configData = await acessConfigFile();
-      
-        if (configData) {
-          if (configData.userEmail) {
-            taskListLog({ userEmail: configData.userEmail });
-          }
-        }
+  if (argv.userMail) {
+    singleUser();
+  } else {
+    const configData = await acessConfigFile();
+
+    if (configData) {
+      if (configData.userEmail) {
+        taskListLog({ userEmail: configData.userEmail });
       }
-
-      
+    } else {
+      console.log("you need to pass --userMail param");
+    }
+  }
 } catch (error) {
-
-    console.log('error Occured', error);
-    
+  console.log("error Occured", error);
 }
-
