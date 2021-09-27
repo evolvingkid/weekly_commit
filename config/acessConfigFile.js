@@ -7,7 +7,7 @@ const acessConfigFile = async () => {
     const filedir = await findUp("weeklycommit.config.json");
 
     if (!filedir) {
-      console.log("This is no data found");
+      
       return;
     }
 

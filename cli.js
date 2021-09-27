@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-":"; //# comment; exec /usr/bin/env node --input-type=module - "$@" < "$0"
+#!/usr/bin/env node
 
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
